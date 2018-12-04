@@ -21,5 +21,5 @@
 二：示例2的成本要比示例1高出一倍多，查询数据较少，勉强还能使用示例2的代码，但如果查询数据量非常大，示例2的代码就有点不理性了。
 
 示例1优化指导如下图:
-![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/search1.png);
+![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/optimization%20guidance%205.png);
 如图，图中并未给出优化指导信息。
