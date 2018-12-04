@@ -6,7 +6,7 @@
 对两个查询示例代码运行结果如下：
 示例 2
 
-![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/search1.png);
+![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/search2.png);
 
 示例2的解释计划:
 ![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/explain%20plan1.png); 示例1
