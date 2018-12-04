@@ -10,9 +10,9 @@
 
 示例2的解释计划:
 ![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/explain%20plan1.png); 示例1
-![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/search1.png);
+![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/search3.png);
 示例1的解释计划:
-![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/search1.png);
+![image](https://github.com/JianYouhjly/Oracle/blob/master/Test%201/explain%20plan4.png);
 我的观点如下：
 从示例1和示例2的脚本运行时间来看，示例1比示例2的运行时间要长一点。所以，单从代码执行效率来看，示例2的代码显得更加好一些。
 但是，当我们再看示例1和示例2各自的解释计划中的cost栏时，我们会发现，示例1的成本会比示例2的成本低一半以上。
