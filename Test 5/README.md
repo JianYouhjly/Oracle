@@ -14,7 +14,7 @@ create or replace PACKAGE MyPack IS
   PROCEDURE Get_Employees(V_EMPLOYEE_ID NUMBER);
 END MyPack; 
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test5/test5.1.png) 
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%205/test5.1.png) 
     
       
         
@@ -48,7 +48,7 @@ END MyPack;
     END;
 END MyPack;
 ```
-  ![Image text](https://github.com/201610414311/Oracle/blob/master/test5/test5.2.png)  
+  ![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%205/test5.2.png)  
   
     
       
@@ -60,7 +60,7 @@ END MyPack;
 select MyPack.Get_SaleAmount(11) AS 部门11应收金额,MyPack.Get_SaleAmount(12) AS 部门12应收金额 from dual;
 ```
 
-  ![Image text](https://github.com/201610414311/Oracle/blob/master/test5/test5.3.png)  
+  ![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%205/test5.3.png)  
     
       
 过程Get_Employees()测试代码：  
@@ -75,5 +75,5 @@ BEGIN
   MYPACK.Get_Employees (  V_EMPLOYEE_ID => V_EMPLOYEE_ID) ;    
 END;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test5/test5.4.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%205/test5.4.png)  
 
