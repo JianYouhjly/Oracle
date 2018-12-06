@@ -87,7 +87,7 @@
       end   if;
 end;
 ```
-![Image text](https://github.com/JianYouhjly/Oracle/blob/master/test4/test4.1.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.1.png)  
   
     
       
@@ -135,7 +135,7 @@ STORAGE
 )
 NOCOMPRESS NO INMEMORY NOPARALLEL;
 ```
- ![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.2.png)  
+ ![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.2.png)  
    
       
         
@@ -208,7 +208,7 @@ LOB (PHOTO) STORE AS SYS_LOB0000092017C00009$$
   )
 );
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.3.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.3.png)  
 创建索引： 
 ```sql
 CREATE INDEX EMPLOYEES_INDEX1_NAME ON EMPLOYEES (NAME ASC)
@@ -297,14 +297,14 @@ STORAGE
   BUFFER_POOL DEFAULT
 );
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.5.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.5.png)  
 ```sql
 ALTER TABLE PRODUCTS
 ADD CONSTRAINT PRODUCTS_CHK1 CHECK
 (PRODUCT_TYPE IN ('耗材', '手机', '电脑'))
 ENABLE;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.4.png) 
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.4.png) 
   
      
         
@@ -370,7 +370,7 @@ PARTITION BY RANGE (ORDER_DATE)
   NOCOMPRESS NO INMEMORY
 );
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.6.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.6.png)  
   
     
       
@@ -412,7 +412,7 @@ STORAGE
 )
 NOPARALLEL;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.7.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.7.png)  
 ```sql
 CREATE INDEX ORDERS_INDEX_CUSTOMER_NAME ON ORDERS (CUSTOMER_NAME ASC)
 NOLOGGING
@@ -429,7 +429,7 @@ STORAGE
 )
 NOPARALLEL;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.10.png) 
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.10.png) 
 
 ```sql
 CREATE UNIQUE INDEX ORDERS_PK ON ORDERS (ORDER_ID ASC)
@@ -454,7 +454,7 @@ STORAGE
 )
 NOPARALLEL;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.8.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.8.png)  
 
 ```sql
 ALTER TABLE ORDERS
@@ -476,7 +476,7 @@ REFERENCES EMPLOYEES
 )
 ENABLE;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.9.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.9.png)  
  ```sql
  ALTER TABLE ORDERS
 ADD CONSTRAINT ORDERS_PK PRIMARY KEY
@@ -560,7 +560,7 @@ PARTITION BY REFERENCE (ORDER_DETAILS_FK1)
 )
 ;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.11.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.11.png)  
 创建order_details索引  
 ```sql
 CREATE UNIQUE INDEX ORDER_DETAILS_PK ON ORDER_DETAILS (ID ASC)
@@ -578,7 +578,7 @@ STORAGE
 )
 NOPARALLEL;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.12.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.12.png)  
 ```sql
 ALTER TABLE ORDER_DETAILS
 ADD CONSTRAINT ORDER_DETAILS_PK PRIMARY KEY
@@ -627,7 +627,7 @@ BEGIN
   end if;
 END;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.13.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.13.png)  
 批量插入订单数据之前，禁用触发器  
 ```sql
 ALTER TRIGGER "ORDERS_TRIG_ROW_LEVEL" DISABLE;
@@ -738,7 +738,7 @@ insert into products (product_name,product_type) values ('paper1','耗材');
 insert into products (product_name,product_type) values ('paper2','耗材');
 insert into products (product_name,product_type) values ('paper3','耗材');
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.14.png)   
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.14.png)   
 插入订单数据  
 ```sql
 declare
@@ -816,4 +816,4 @@ select * from ORDERS where  order_id=1;
 select * from ORDER_DETAILS where  order_id=1;
 select * from VIEW_ORDER_DETAILS where order_id=1;
 ```
-![Image text](https://github.com/201610414311/Oracle/blob/master/test4/test4.15.png)  
+![Image text](https://github.com/JianYouhjly/Oracle/blob/master/Test%204/test4.15.png)  
